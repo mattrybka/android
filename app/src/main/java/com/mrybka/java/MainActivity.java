@@ -13,14 +13,11 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity  {
 
-    private TextToSpeech textToSpeech;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
     }
 
     @OnClick(R.id.button)

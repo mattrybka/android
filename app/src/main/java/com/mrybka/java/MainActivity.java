@@ -11,7 +11,7 @@ import java.util.Locale;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +21,20 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     @OnClick(R.id.button)
-    public void clickOnButton(){
-        Intent intent =  new Intent(this, Main2Activity.class);
+    public void clickOnButton() {
+        Intent intent = new Intent(this, SlideActivity.class);
         startActivity(intent);
     }
 
     @OnClick(R.id.button2)
-    public void clickOnButton2(){
-        Intent intent =  new Intent(this, Main3Activity.class);
+    public void clickOnButton2() {
+        Intent intent = new Intent(this, ListLabActivity.class);
         startActivity(intent);
     }
 
     @OnClick(R.id.button3)
-    public void clickOnButton3(){
-        Intent intent =  new Intent(this, Main4Activity.class);
+    public void clickOnButton3() {
+        Intent intent = new Intent(this, TestActivity.class);
         startActivity(intent);
     }
 

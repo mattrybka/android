@@ -1,17 +1,17 @@
 {
   "questions": [
     {
-      "qestion": "Pytanie 1:",
-      "right_answer": "Ok",
-      "wrong_answer_1": "dupa1",
-      "wrong_answer_2": "dupa2",
-      "wrong_answer_3": "dupa3"
+      "qestion": "1. Polaczenie z baza MySql z jezyka php:",
+      "right_answer": "mysql_connect(\"host\")",
+      "wrong_answer_1": "myslq_open(\"host\")",
+      "wrong_answer_2": ")connect_mysql(\"host\")",
+      "wrong_answer_3": ")conneect_mysql(\"host\")"
     },
     {
-      "qestion": "Pytanie 2:",
-      "right_answer": "Ok",
-      "wrong_answer_1": "dupa1",
-      "wrong_answer_2": "dupa2",
+      "qestion": "2. Dolaczenie zewnetrznego skryptu js:",
+      "right_answer": "<script src=\"script.js\"/>",
+      "wrong_answer_1": "<script link=\"skrypt.js\"/>",
+      "wrong_answer_2": "<script rel=\"script.js\"/>",
       "wrong_answer_3": "dupa3"
     },
     {

@@ -50,6 +50,5 @@
         android:id="@+id/button"
         android:text="Sprawdź"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

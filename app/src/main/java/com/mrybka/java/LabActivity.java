@@ -12,7 +12,9 @@ import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Main3Activity extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener, OnPageErrorListener {
+public class LabActivity extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener, OnPageErrorListener {
+
+    public static final String LAB = "lab";
 
     @BindView(R.id.pdfView)
     PDFView pdfView;
@@ -20,9 +22,9 @@ public class Main3Activity extends AppCompatActivity implements OnPageChangeList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_lab);
         ButterKnife.bind(this);
-        pdfView.fromAsset("sample.pdf")
+        pdfView.fromAsset(getIntent().getStringExtra(LAB))
                 .defaultPage(0)
                 .onPageChange(this)
                 .enableAnnotationRendering(true)

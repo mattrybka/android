@@ -24,7 +24,7 @@ public class RawJsonGenerator {
         InputStream resourceReader = context.getResources().openRawResource(resId);
         Writer writer = new StringWriter();
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(resourceReader,"UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(resourceReader, "UTF-8"));
             String line = reader.readLine();
             while (line != null) {
                 writer.write(line);

@@ -32,6 +32,224 @@
         "<script rel=\"script.js\"/>",
         "dupa3"
       ]
+    },
+
+    {
+      "question": "3.Która zawartość struktury pliku *.xml jest zgodna ze składnią języka XML?",
+      "right_answers": [
+        "<?xml version=\"1.0\"?><z1><z2>Tekst</z2></z1>"
+      ],
+      "wrong_answers": [
+        "<?xml version=\"1.0\"?><z1>Tekst</z1><z2>Tekst2</z2>",
+        "<xml version=\"1.0\"><z1>Tekst<z2>Tekst</z2></z1>",
+        "<?xml version=\"1.0\"?><z1>Tekst</z2><z2>Tekst2</z1>"
+      ]
+    },
+    {
+      "question": "W języku XML określenie znacznika myTag z przestrzeni nazw myNs ma postać:",
+      "right_answers": [
+        "<myNs:myTag> Zawartość </myNs:myTag>"
+      ],
+      "wrong_answers": [
+        "<myTag:myNs> Zawartość </myTag:myNs>",
+        "<xmlns:myTag> Zawartość </ xmlns:myTag>",
+        "<myNs:xmlns> Zawartość </myNs:xmlns >"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
+    },
+
+    {
+      "question": "Mamy klase p.do_prawej { align: right} odwolanie do niej",
+      "right_answers": [
+        "<p class=\"do_prawej\">Do prawej</p>"
+      ],
+      "wrong_answers": [
+        "<p ><class=\"do_prawej\">Do prawej<class></p>",
+        "<p id=\"do_prawej\">Do prawej</p>",
+        "<class id=\"do_prawej\">Do prawej</class>"
+      ]
+    },
+
+
+    {
+      "question": "Ustawienie stylu dla elementu body:",
+      "right_answers": [
+        "body { background-color: red}"
+      ],
+      "wrong_answers": [
+        "<body background-color: red>",
+        "{body background-color: red}",
+        "body <background-color: red>"
+      ]
+    },
+
+    {
+      "question": "Dane wysyłane metodą GET z formularza w skrypcie PHP są dostępne w tablicy superglobalnej o nazwie:",
+      "right_answers": [
+        "$_GET"
+      ],
+      "wrong_answers": [
+        "$_POST_GET",
+        "$_POST",
+        "$_GET_POST"
+      ]
+    },
+
+    {
+      "question": "Dla tablicy języka PHP zdefiniowanej jako $a=array(\"a\" => 55, \"b\" => 22); polecenie echo $a[`a`]; wyświetli:",
+      "right_answers": [
+        "55"
+      ],
+      "wrong_answers": [
+        "<Komunikat o błędzie",
+        "null",
+        "22"
+      ]
+    },
+
+    {
+      "question": "Domyslne kodowanie w pliku xml to:",
+      "right_answers": [
+        "UTF-8"
+      ],
+      "wrong_answers": [
+        "unicode",
+        "windows",
+        "brak"
+      ]
+    },
+
+
+    {
+      "question": "6.Rozszerzenie pliku z szablonem transformacji xslt:",
+      "right_answers": [
+        "*.xsl"
+      ],
+      "wrong_answers": [
+        "*.xml",
+        "*.xhtml",
+        "*.xhtml"
+      ]
     }
+
   ]
 }

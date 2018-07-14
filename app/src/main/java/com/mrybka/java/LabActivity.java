@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 
 public class LabActivity extends AppCompatActivity implements OnPageChangeListener, OnLoadCompleteListener, OnPageErrorListener {
 
-    public static final String LAB = "lab";
+    public static final String LAB = "lab";//Klucz do odzyskania wartości z intentu
 
     @BindView(R.id.pdfView)
     PDFView pdfView;
@@ -24,7 +24,7 @@ public class LabActivity extends AppCompatActivity implements OnPageChangeListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab);
         ButterKnife.bind(this);
-        pdfView.fromAsset(getIntent().getStringExtra(LAB))
+        pdfView.fromAsset(getIntent().getStringExtra(LAB))//pobranie intormacji z intentu jaki pdf ma byc wyswieltony
                 .defaultPage(0)
                 .onPageChange(this)
                 .enableAnnotationRendering(true)

@@ -17,7 +17,7 @@ public class RawJsonGenerator {
     private final Gson gson;
 
     public RawJsonGenerator() {
-        gson = new Gson();
+        gson = new Gson();// biblioteka google do yamieninia json na POJO i odwrotnie
     }
 
     public <T> T getJsonFileAsClass(Context context, final int resId, final Class<T> classType) {

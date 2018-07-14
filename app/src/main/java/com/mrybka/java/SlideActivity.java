@@ -16,21 +16,17 @@ import butterknife.ButterKnife;
 
 public class SlideActivity extends AppCompatActivity {
 
+    public static final String LECTURE = "lecture";
     @BindView(R.id.viewPager)
     ViewPager viewPager;
-    private int[] mResources = {
-            R.drawable.photo_1,
-            R.drawable.photo_2,
-            R.drawable.photo_3,
-            R.drawable.photo_4,
-            R.drawable.photo_5,
-    };
+    private int[] resources;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_activity);
         ButterKnife.bind(this);
+        resources = getIntent().getIntArrayExtra(LECTURE);
         viewPager.setAdapter(new CustomPagerAdapter());
     }
 
@@ -44,7 +40,7 @@ public class SlideActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return mResources.length;
+            return resources.length;
         }
 
         @Override
@@ -57,7 +53,7 @@ public class SlideActivity extends AppCompatActivity {
             View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
 
             ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
-            imageView.setImageResource(mResources[position]);
+            imageView.setImageResource(resources[position]);
 
             container.addView(itemView);
 

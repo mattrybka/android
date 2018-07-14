@@ -38,6 +38,11 @@ public class TestActivity extends AppCompatActivity {
         initQestions();
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
     private void initQestions() {
         RawJsonGenerator rawJsonGenerator = new RawJsonGenerator();
         questions = rawJsonGenerator.getJsonFileAsClass(this, R.raw.questions, Questions.class);
@@ -51,7 +56,7 @@ public class TestActivity extends AppCompatActivity {
             ArrayList answers = new ArrayList<String>();
             answers.addAll(item.getRightAnswers());
             answers.addAll(item.getWrongAnswers());
-            Collections.shuffle(answers);
+            Collections.shuffle(answers);//losowanie kolejności
             for (int i = 0; i < 4; i++) {
                 answersButtons.get(i).setChecked(false);
                 answersButtons.get(i).setText(((String) answers.get(i)));
@@ -66,7 +71,7 @@ public class TestActivity extends AppCompatActivity {
             }
             new AlertDialog.Builder(this)
                     .setTitle("Koniec testu!")
-                    .setMessage("Wynik: " + goodQuestions + "/" + answers.size())
+                    .setMessage("Wynik: " + goodQuestions + "/" + answers.size() + "\n"+(goodQuestions/answers.size()>=0.75?"Zdałeś":"Niestety nie udało się"))
                     .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {

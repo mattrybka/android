@@ -1,8 +1,8 @@
 package com.mrybka.java;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnItemClick;
 
-public class ListLabActivity extends AppCompatActivity {
+public class ListLectureActivity extends AppCompatActivity {
 
     @BindView(R.id.listView)
     ListView listView;
@@ -22,15 +22,15 @@ public class ListLabActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_lab);
+        setContentView(R.layout.activity_list_lecture);
         ButterKnife.bind(this);
         listView.setAdapter(new ListAdapter());
     }
 
     @OnItemClick(R.id.listView)
     public void openPdf(int position) {
-        Intent intent = new Intent(this, LabActivity.class);
-        intent.putExtra(LabActivity.LAB, Utils.LABS[position]);//przekazanie wartości przez intent
+        Intent intent = new Intent(this, SlideActivity.class);
+        intent.putExtra(SlideActivity.LECTURE, Utils.LECTURES[position]);//przekazanie wartości przez intent
         startActivity(intent);// odpalenie aktywności z odpowiednim pdfem
     }
 
@@ -38,7 +38,7 @@ public class ListLabActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return Utils.LABS.length;
+            return Utils.LECTURES.length;
         }
 
         @Override
@@ -55,7 +55,7 @@ public class ListLabActivity extends AppCompatActivity {
         public View getView(int i, View view, ViewGroup viewGroup) {
             LayoutInflater inflater = getLayoutInflater();
             View rowView = inflater.inflate(R.layout.list_lab_item, null, true);
-            ((TextView) rowView.findViewById(R.id.text)).setText(Utils.LABS_NAMES[i]);
+            ((TextView) rowView.findViewById(R.id.text)).setText(Utils.LECTURES_NAMES[i]);
             return rowView;
         }
     }

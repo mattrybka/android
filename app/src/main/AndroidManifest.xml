@@ -23,9 +23,11 @@
             android:label="@string/title_activity_main2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <!-- zmiana stylu aktywności, usunięcie przywraca actionBar-->
         <activity
             android:name=".LabActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TestActivity"
             android:label="@string/title_activity_main4"
@@ -33,6 +35,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListLabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListLectureActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

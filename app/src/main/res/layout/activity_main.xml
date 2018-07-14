@@ -12,7 +12,7 @@
         android:layout_above="@id/button2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="Slajdy" />
+        android:text="Wykłady" />
 
 
     <Button

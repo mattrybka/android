@@ -3,73 +3,41 @@ package com.mrybka.java.models;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 
 public class QuestionsItem {
 
-    @SerializedName("right_answer")
-    private String rightAnswer;
+    @SerializedName("right_answers")
+    private List<String> rightAnswers;
 
-    @SerializedName("qestion")
-    private String qestion;
+    @SerializedName("question")
+    private String question;
 
-    @SerializedName("wrong_answer_1")
-    private String wrongAnswer1;
+    @SerializedName("wrong_answers")
+    private List<String> wrongAnswers;
 
-    @SerializedName("wrong_answer_2")
-    private String wrongAnswer2;
-
-    @SerializedName("wrong_answer_3")
-    private String wrongAnswer3;
-
-    public void setRightAnswer(String rightAnswer) {
-        this.rightAnswer = rightAnswer;
+    public List<String> getRightAnswers() {
+        return rightAnswers;
     }
 
-    public String getRightAnswer() {
-        return rightAnswer;
-    }
-
-    public void setQestion(String qestion) {
-        this.qestion = qestion;
+    public void setRightAnswers(List<String> rightAnswers) {
+        this.rightAnswers = rightAnswers;
     }
 
     public String getQestion() {
-        return qestion;
+        return question;
     }
 
-    public void setWrongAnswer1(String wrongAnswer1) {
-        this.wrongAnswer1 = wrongAnswer1;
+    public void setQestion(String qestion) {
+        this.question = qestion;
     }
 
-    public String getWrongAnswer1() {
-        return wrongAnswer1;
+    public List<String> getWrongAnswers() {
+        return wrongAnswers;
     }
 
-    public void setWrongAnswer2(String wrongAnswer2) {
-        this.wrongAnswer2 = wrongAnswer2;
-    }
-
-    public String getWrongAnswer2() {
-        return wrongAnswer2;
-    }
-
-    public void setWrongAnswer3(String wrongAnswer3) {
-        this.wrongAnswer3 = wrongAnswer3;
-    }
-
-    public String getWrongAnswer3() {
-        return wrongAnswer3;
-    }
-
-    @Override
-    public String toString() {
-        return
-                "QuestionsItem{" +
-                        "right_answer = '" + rightAnswer + '\'' +
-                        ",qestion = '" + qestion + '\'' +
-                        ",wrong_answer_1 = '" + wrongAnswer1 + '\'' +
-                        ",wrong_answer_2 = '" + wrongAnswer2 + '\'' +
-                        ",wrong_answer_3 = '" + wrongAnswer3 + '\'' +
-                        "}";
+    public void setWrongAnswers(List<String> wrongAnswers) {
+        this.wrongAnswers = wrongAnswers;
     }
 }

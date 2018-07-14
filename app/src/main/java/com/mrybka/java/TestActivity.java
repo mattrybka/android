@@ -4,7 +4,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -50,10 +49,8 @@ public class TestActivity extends AppCompatActivity {
             item = questions.getQuestions().get(number);
             question.setText(item.getQestion());
             ArrayList answers = new ArrayList<String>();
-            answers.add(item.getRightAnswer());
-            answers.add(item.getWrongAnswer1());
-            answers.add(item.getWrongAnswer2());
-            answers.add(item.getWrongAnswer3());
+            answers.addAll(item.getRightAnswers());
+            answers.addAll(item.getWrongAnswers());
             Collections.shuffle(answers);
             for (int i = 0; i < 4; i++) {
                 answersButtons.get(i).setChecked(false);
@@ -83,16 +80,18 @@ public class TestActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)
     public void clcikOnButton() {
-        for (CheckBox checkBox : answersButtons) {
-            if (checkBox.isChecked()) {
-                if (checkBox.getText().equals(item.getRightAnswer())) {
-                    answers.add(1);
+        algorithmForEachQuestions();
+        nextQuestion();
+    }
 
-                } else {
-                    answers.add(0);
-                }
+    private void algorithmForEachQuestions() {
+        for (CheckBox checkBox : answersButtons) {
+            boolean isGoodAnswer = item.getRightAnswers().contains(checkBox.getText().toString());
+            if ((checkBox.isChecked() && !isGoodAnswer) || (!checkBox.isChecked() && isGoodAnswer)) {
+                answers.add(0);
+                return;
             }
         }
-        nextQuestion();
+        answers.add(1);
     }
 }

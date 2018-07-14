@@ -1,25 +1,37 @@
 {
   "questions": [
     {
-      "qestion": "1. Polaczenie z baza MySql z jezyka php:",
-      "right_answer": "mysql_connect(\"host\")",
-      "wrong_answer_1": "myslq_open(\"host\")",
-      "wrong_answer_2": ")connect_mysql(\"host\")",
-      "wrong_answer_3": ")conneect_mysql(\"host\")"
+      "question": "1. Polaczenie z baza MySql z jezyka php:",
+      "right_answers": [
+        "mysql_connect(\"host\")"
+      ],
+      "wrong_answers": [
+        "myslq_open(\"host\")",
+        ")connect_mysql(\"host\")",
+        ")conneect_mysql(\"host\")"
+      ]
     },
     {
-      "qestion": "2. Dolaczenie zewnetrznego skryptu js:",
-      "right_answer": "<script src=\"script.js\"/>",
-      "wrong_answer_1": "<script link=\"skrypt.js\"/>",
-      "wrong_answer_2": "<script rel=\"script.js\"/>",
-      "wrong_answer_3": "dupa3"
+      "question": "2. Dolaczenie zewnetrznego skryptu js:",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
     },
     {
-      "qestion": "Pytanie 3:",
-      "right_answer": "Ok",
-      "wrong_answer_1": "dupa1",
-      "wrong_answer_2": "dupa2",
-      "wrong_answer_3": "dupa3"
+      "question": "Pytanie 3",
+      "right_answers": [
+        "<script src=\"script.js\"/>"
+      ],
+      "wrong_answers": [
+        "<script link=\"skrypt.js\"/>",
+        "<script rel=\"script.js\"/>",
+        "dupa3"
+      ]
     }
   ]
 }

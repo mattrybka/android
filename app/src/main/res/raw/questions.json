@@ -14,23 +14,23 @@
     {
       "question": "2. Dolaczenie zewnetrznego skryptu js:",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "Określa reguły przekształcania węzła głównego dokumentu XML",
+        "Może wystąpić w dokumencie XSL tylko raz",
+        "Definiuje element główny (root) pliku XSL"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "Nie ma czegos takiego w xslt"
       ]
     },
     {
-      "question": "Pytanie 3",
+      "question": "Para elementów <xsl:stylesheet type=\"/\" > … </xsl:stylesheet> w pliku szablonu *.xsl języka XSLT:",
       "right_answers": [
         "<script src=\"script.js\"/>"
       ],
       "wrong_answers": [
         "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<script rel=\"script.js\"/>a",
+        "<script real=\"script.js\"/>a"
       ]
     },
 
@@ -58,122 +58,110 @@
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "Wyslanie e-maila w odnosniku :",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "<a href=\"mailto: jprokop@prz.edu.pl\">wyslij</a>"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<a href=\"//mail: jprokop@prz.edu.pl\">wyslij</a>\\",
+        "<mail> jprokop@prz.edu.pl</mail>",
+        "<email> jprokop@prz.edu.pl</email>"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": ".Dolaczenie zewnetrznego skryptu js:",
       "right_answers": [
         "<script src=\"script.js\"/>"
       ],
       "wrong_answers": [
         "<script link=\"skrypt.js\"/>",
         "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<script href=\"script.js\"/>"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "Dolaczenie zewnetrznego css:",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "<link rel=\"stylesheet\" type=\"text/css\" href=\"pik_stylow.css\" /> "
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<head rel=\"stylesheet\" type=\"text/css\" href=\"pik_stylow.css\" /> ",
+        "<style rel=\"stylesheet\" type=\"text/css\" href=\"pik_stylow.css\" /> ",
+        "<link href=\"stylesheet\" type=\"text/css\" href=\"pik_stylow.css\" /> "
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "Zgodny ze skladnia html:",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "<html><head></head><body>Tekst</body></html> "
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<html><body><head>Tekst</body></head></html> ",
+        "<html><title><body>Tekst</body></title></html> ",
+        "<html><body><head>Tekst</body></head></html"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "Mamy klase p.do_prawej { align: right} odwolanie do niej",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "<p class=\"do_prawej\">Do prawej</p>"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<p ><class=\"do_prawej\">Do prawej<class></p>",
+        "<p id=\"do_prawej\">Do prawej</p>",
+        "<class id=\"do_prawej\">Do prawej</class>"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "<a href=\"javascript:history.back()\">Powrót</a>",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "przejdzie do poprzedniej strony w hierarchii historii"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<wróci do strony domowej",
+        "przejdzie do następnej strony w hierarchii historii",
+        "to nie jest poprawne składniowo"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "W zewnętrznym pliku css zdefiniowano kolor tekstu jako blue, a na stronie w znaczniku head jako red. Jaki będzie kolor ",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "czerwony"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "niebieski",
+        "czarny",
+        "biały"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "W zewnętrznym pliku css zdefiniowano kolor tekstu jako blue, a na stronie w znaczniku head jako red. Jaki będzie kolor ",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "<? xml version=\"1.0\" encoding=\"utf-8\" ?>"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "<? xml version=\"1.0\"></encoding>windows-1250 ?>",
+        "<? xml version=\"1.0\"></encoding>windows-1270 ?>",
+        "<? xml version=\"1.0\"></encoding>windowss-1250 ?>"
       ]
     },
 
     {
-      "question": "Pytanie 3",
+      "question": "Zeby programowo zmienic zawartosc znacznika o danym id trzeba uzyc:",
       "right_answers": [
-        "<script src=\"script.js\"/>"
+        "JS + DOM"
       ],
       "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
-      ]
-    },
-
-    {
-      "question": "Pytanie 3",
-      "right_answers": [
-        "<script src=\"script.js\"/>"
-      ],
-      "wrong_answers": [
-        "<script link=\"skrypt.js\"/>",
-        "<script rel=\"script.js\"/>",
-        "dupa3"
+        "DOM bez JS",
+        "html + css",
+        "tylko html"
       ]
     },
 

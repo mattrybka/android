@@ -38,10 +38,7 @@ public class TestActivity extends AppCompatActivity {
         initQestions();
     }
 
-    @Override
-    public void onBackPressed() {
 
-    }
 
     private void initQestions() {
         RawJsonGenerator rawJsonGenerator = new RawJsonGenerator();
